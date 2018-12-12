@@ -1,0 +1,9 @@
+<h1><%= @ingredient.name %></h1>
+
+<h3>You can find this ingredient in:</h3>
+<ul class="lists">
+
+  <% @ingredient.recipes.each do |recipe| %>
+  <li><%= recipe.name %></li>
+  <% end %>
+</ul>

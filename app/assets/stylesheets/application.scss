@@ -1,0 +1,38 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+
+
+ .myButton {
+ color: rgb(192, 228, 255); font-size: 15px; line-height: 10px; padding: 5px; border-radius: 4px; font-family: Georgia, serif; font-weight: normal; text-decoration: none; font-style: normal; font-variant: normal; text-transform: none; background-image: linear-gradient(to right, rgb(28, 110, 164) 0%, rgb(35, 136, 203) 50%, rgb(20, 78, 117) 100%); box-shadow: rgb(0, 0, 0) 5px 5px 15px 5px; border: 2px solid rgb(28, 110, 164); display: inline-block;}
+ .myButton:hover {
+ background: #1C6EA4; }
+ .myButton:active {
+ background: #144E75; }
+
+
+// .lists {
+//  font-family: Verdana, Geneva, sans-serif;
+// font-size: 17px;
+// letter-spacing: 0.8px;
+// word-spacing: 2px;
+// color: #000000;
+// font-weight: normal;
+// text-decoration: none;
+// font-style: normal;
+// font-variant: normal;
+// text-transform: none;
+// }

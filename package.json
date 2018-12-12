@@ -1,0 +1,7 @@
+{
+  "name": "allergens_lab",
+  "private": true,
+  "dependencies": {
+    "semantic-ui": "^2.4.2"
+  }
+}

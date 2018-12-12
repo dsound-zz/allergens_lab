@@ -1,0 +1,18 @@
+<h2><%= @recipe.name %></h2>
+<h4>For user <%= @recipe.user.name %><br/>
+
+  <p>Add some ingredients to your new recipe</p><br/>
+
+  <%= form_for @ingredient do |f| %>
+  <%= f.label :ingredient_1 %>
+  <%= f.text_field :name %>
+  <%= f.label :ingredient_2 %>
+  <%= f.text_field :name %>
+  <%= f.label :ingredient_3 %>
+  <%= f.text_field :name %>
+  <%= f.label :ingredient_4 %>
+  <%= f.text_field :name %>
+  <%= f.label :ingredient_5 %>
+  <%= f.text_field :name %>
+  <%= f.submit %>
+  <% end %>

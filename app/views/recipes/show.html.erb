@@ -1,0 +1,20 @@
+<h2><%= @recipe.name %></h2>
+
+<h4>For user</h4>
+
+  <h3><%= @user_message %></h3>
+
+<ul class="lists">
+    <%  @recipe.ingredients.each do |ingredient| %>
+    <li><%= link_to ingredient.name, ingredient_path(ingredient) %></li>
+    <% end %>
+</ul>
+
+<%= flash[:error] %>
+<h3>Add an ingredient</h3><br/>
+  <%= form_for @ingredient do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+  <%= f.hidden_field :recipe_id, :value => @recipe.id %>
+  <%= f.submit %>
+  <% end %>

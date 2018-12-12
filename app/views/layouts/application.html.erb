@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>AllergensLab</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+  </head>
+
+  <body>
+    <%= button_to 'Create new recipe', new_recipe_path, method: "get" %>
+  
+    <%= button_to 'Show all recipes', recipes_path, method: "get" %>
+    <%= button_to 'Show all users', users_path, method: "get" %>
+    <%= yield %>
+  </body>
+</html>

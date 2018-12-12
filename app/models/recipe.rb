@@ -1,0 +1,11 @@
+class Recipe < ApplicationRecord
+  has_many :recipe_ingredients
+  has_many :ingredients, through: :recipe_ingredients
+  belongs_to :user
+
+  def check_user
+  
+  end
+
+
+end

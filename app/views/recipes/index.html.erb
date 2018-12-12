@@ -1,0 +1,13 @@
+<h1>Recipes</h1>
+
+<% @recipes.each do |recipe|%>
+
+<ul class="lists">
+
+  <li><%= link_to recipe.name, recipe_path(recipe) %></li>
+  </ul>
+
+<% end %>
+
+<%= button_to 'Click to sort recipes', recipes_path, method: "get" ,params: {:order => true} %><br/>
+  <!-- creates button and routes to recipe controller with action in index method with params :order equals true  -->
